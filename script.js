@@ -102,3 +102,4 @@ function checkSolution() {
         document.getElementById("message").textContent = "Try again! Some numbers are wrong.";
     }
 }
+
