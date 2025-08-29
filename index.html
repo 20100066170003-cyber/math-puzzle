@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Puzzle Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="game-container">
+    <header>
         <h1>Math Puzzle Game</h1>
-        <div class="level-display">Level: <span id="level-number">1</span></div>
-        <div id="puzzle-board" class="puzzle-board"></div>
-        <div id="number-pieces" class="number-pieces"></div>
-        <div class="controls">
-            <button id="check-button">Check</button>
-            <button id="next-level-button" class="hidden">Next Level</button>
-            <button id="reset-button">Reset</button>
+        <div class="difficulty-buttons">
+            <button id="easy-btn">Level 1 - 10 (Easy)</button>
+            <button id="hard-btn">Level 10 - 20 (Hard)</button>
         </div>
-        <div id="message-container" class="message-container"></div>
-    </div>
+    </header>
+
+    <main>
+        <div id="puzzle-board">
+            <!-- The puzzle slots will be generated here -->
+        </div>
+
+        <div id="numbers-container">
+            <!-- The draggable numbers will be shown here -->
+        </div>
+
+        <div id="message"></div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
+
